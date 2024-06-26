@@ -41,13 +41,4 @@ ethers:         db files \n\
 rpc:            db files \n\
  \n\
 netgroup:       nis' > /etc/nsswitch.conf 
-RUN     echo "session required pam_mkhomedir.so skel=/etc/skel umask=0022" >> /etc/pam.d/common-session
-RUN service nscd start
-RUN mv /bin/rm /bin/rm.old
-RUN mv /bin/rmdir /bin/rmdir.old
-RUN chmod 500 /bin/rm.old
-RUN chmod 500 /bin/rmdir.old
-RUN echo "#!/bin/bash\necho 'rm command is disabled'" > /bin/rm
-RUN echo "#!/bin/bash\necho 'rmdir command is disabled'" > /bin/rmdir
-RUN chmod 755 /bin/rm*
 WORKDIR /workspace
