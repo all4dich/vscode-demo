@@ -1,0 +1,1 @@
+# Nota VSCode Dev Container Environment with LDAP authentication
