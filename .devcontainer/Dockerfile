@@ -41,4 +41,6 @@ ethers:         db files \n\
 rpc:            db files \n\
  \n\
 netgroup:       nis' > /etc/nsswitch.conf 
+RUN echo "alias rm='rm -i'" >> /etc/profile
+RUN echo "alias rm='rm -i'" >> /etc/zsh/zshrc 
 WORKDIR /workspace
