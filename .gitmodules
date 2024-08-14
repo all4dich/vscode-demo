@@ -1,3 +1,6 @@
 [submodule ".devcontainer"]
 	path = .devcontainer
 	url = https://github.com/nota-github/nota-dev-vscode-devcontainer
+[submodule ".vscode"]
+	path = .vscode
+	url = https://github.com/nota-github/nota-dev-vscode-settings.git
