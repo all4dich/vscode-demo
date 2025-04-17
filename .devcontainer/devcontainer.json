@@ -3,6 +3,7 @@
     "dockerFile": "Dockerfile",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
     "workspaceFolder": "/workspace/",
+    /*
     "mounts": [
        {
            "source": "${localEnv:HOME}/.ssh",
@@ -16,7 +17,9 @@
             "type": "bind",
             "consistency": "cached"
         }
-    ],
+   ],
+   */
+    "runArgs": ["--rm"],
     "remoteUser": "root",
     "updateRemoteUserUID": true
 }
