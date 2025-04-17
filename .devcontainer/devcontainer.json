@@ -1,6 +1,29 @@
 {
 	"name": "Development Environment",
-	"image": "ubuntu:24.04",
+	"image": "python:3.12.10",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12",
+			"installPipx": true,
+			"installPoetry": true,
+			"installPipenv": true
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.makefile-tools",
+				"ms-vscode.cmake-tools"
+			]
+		}
+	},
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
 	"workspaceFolder": "/workspace/",
 	"mounts": [
