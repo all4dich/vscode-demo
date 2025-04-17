@@ -1,0 +1,22 @@
+{
+    "name": "Dev Container",
+    "dockerFile": "Dockerfile",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace/",
+    "mounts": [
+       {
+           "source": "${localEnv:HOME}/.ssh",
+           "target": "/root/.ssh",
+           "type": "bind",
+           "consistency": "cached"
+       },
+        {
+            "source": "${localEnv:HOME}/.gitconfig",
+            "target": "/root/.gitconfig",
+            "type": "bind",
+            "consistency": "cached"
+        }
+    ],
+    "remoteUser": "root",
+    "updateRemoteUserUID": true
+}
