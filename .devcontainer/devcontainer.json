@@ -21,15 +21,27 @@
     */
     "customizations": {
         "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.makefile-tools",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-pylance",
+                "golang.go",
+                "vscodevim.vim",
+                "GitHub.copilot",
+                "google.geminicodeassist"
+            ],
             "settings": {
-                "terminal.integrated.shell.linux": "/bin/bash",
+                "terminal.integrated.shell.linux": "/usr/bin/zsh",
                 "terminal.integrated.profiles.linux": {
                     "bash": {
-                        "path": "/bin/bash",
+                        "path": "/usr/bin/zsh",
                         "args": ["-l"]
                     }
                 },
-                "terminal.integrated.defaultProfile.linux": "bash"
+                "terminal.integrated.defaultProfile.linux": "zsh"
             }
         }
     },
